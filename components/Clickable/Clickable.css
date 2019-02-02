@@ -1,0 +1,29 @@
+#clickable {
+    margin: 10% auto;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+#new-quote {
+    text-align: center;
+    width: 100px;
+    color: white;
+}
+
+#tweet-quote, #tweet-logo, #new-quote {
+    text-align: center;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+#tweet-quote, #tweet-logo {
+    width: 40px;
+}
+
+#tweet-logo {
+    margin-left: 8px;
+}
