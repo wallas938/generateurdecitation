@@ -8,7 +8,7 @@ export function QuoteBox (props) {
     
         return (
             <div id="quote-box">
-                    <Citation color={props.color} citation={props.currentData.citation} />
+                <Citation color={props.color} citationId={props.currentData.id} citation={props.currentData.citation} />
                 <Author color={props.color} author={props.currentData.author} />
                 <Clickable color={props.color} handleClick={props.handleClick} />
             </div>

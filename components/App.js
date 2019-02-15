@@ -15,7 +15,8 @@ export class App extends React.Component {
                 author: '',
                 citation: ''
             },
-            currentColor: ''
+            currentColor: '',
+            fadeState: "",
         }
         this.handleClick = this.handleClick.bind(this);
     }
@@ -48,13 +49,13 @@ export class App extends React.Component {
     }
  
     render() {
-
+        
         let colorStyle = {backgroundColor: this.state.currentColor}
         
         return (
             <div className="app" style={colorStyle} >
                 <div className="container">
-                    <QuoteBox color={this.state.currentColor} currentData={this.state.currentData} handleClick={this.handleClick}/>
+                    <QuoteBox  color={this.state.currentColor} currentData={this.state.currentData} handleClick={this.handleClick}/>
                 </div>
             </div>
         )

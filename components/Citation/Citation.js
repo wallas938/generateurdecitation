@@ -5,6 +5,6 @@ export function Citation (props) {
     let colorStyle = {color: props.color};
     
     return (
-        <div id="text" style={colorStyle}>{ props.citation }</div>
+        <p id="text" className="fadeIn" key={props.id} style={colorStyle}>{ props.citation }</p>
     )
  }
